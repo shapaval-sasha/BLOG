@@ -1,52 +1,41 @@
 {
-  "name": "client",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "@types/jest": "^26.0.24",
-    "@types/node": "^12.20.29",
-    "@types/react": "^17.0.29",
-    "@types/react-dom": "^17.0.9",
-    "axios": "^0.23.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-redux": "^7.2.5",
-    "react-router-dom": "^5.3.0",
-    "react-scripts": "4.0.3",
-    "redux": "^4.1.1",
-    "redux-devtools-extension": "^2.13.9",
-    "redux-thunk": "^2.3.0",
-    "typescript": "^4.4.4",
-    "web-vitals": "^1.1.2"
-  },
+  "name": "react_blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev server/index.ts",
+    "build": "tsc"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "google-auth-library": "^7.10.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.10",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.7.0",
+    "twilio": "^3.69.0"
   },
   "devDependencies": {
-    "@types/react-router-dom": "^5.3.1"
+    "@types/bcrypt": "^5.0.0",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/cors": "^2.8.12",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/mongoose": "^5.11.97",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^16.10.4",
+    "@types/nodemailer": "^6.4.4",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.3"
   }
 }
