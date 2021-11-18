@@ -16,4 +16,11 @@ router.get('/logout', authCtrl.logout)
 
 router.get('/refresh_token', authCtrl.refreshToken)
 
+router.post('/google_login', authCtrl.googleLogin)
+
+router.post('/login_sms', authCtrl.loginSMS)
+
+router.post('/sms_verify', authCtrl.smsVerify)
+// router.post('/facebook_login', authCtrl.facebookLogin)
+
 export default router
